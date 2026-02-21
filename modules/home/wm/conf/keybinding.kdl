@@ -67,7 +67,7 @@ binds {
     Ctrl+Print { spawn "nirishot" "-m" "window"; }
 
     "Pause" { spawn "screen-record"; }
-    "Scroll_Lock" { spawn "toggle-hyprsunset"; }
+    "Scroll_Lock" { spawn "toggle-nightlight"; }
 
     // --- MEDIA KEYS ---
     "XF86AudioRaiseVolume" allow-when-locked=true { spawn "wpctl" "set-volume" "-l" "1" "@DEFAULT_AUDIO_SINK@" "5%+"; }

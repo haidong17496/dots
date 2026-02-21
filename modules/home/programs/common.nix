@@ -13,13 +13,12 @@ in {
   config = lib.mkIf cfg.enable {
     # Core utilities used by many scripts and apps
     home.packages = with pkgs; [
+      brightnessctl # Control device brightness
       wl-clipboard # Clipboard management for Wayland
       libnotify # Library for sending desktop notifications (notify-send)
       jq # Command-line JSON processor
       fd # Simple, fast and user-friendly alternative to 'find'
       ripgrep # Fast search tool
-      bottom # System monitor (btm)
-      pulsemixer # CLI audio mixer
     ];
   };
 }

@@ -32,7 +32,7 @@ in {
 
         background = [
           {
-            path = "/home/${user}/dots/images/wallpaper.png";
+            path = "${../../../../images/wallpaper.png}";
             blur_passes = 3;
             blur_size = 4;
             brightness = 0.5;

@@ -57,6 +57,13 @@
     utils.easyeffects.enable = true;
   };
 
+  nkm.programs.tuiApps = {
+    fileManager.yazi.enable = true;
+    audio.pulsemixer.enable = true;
+    bluetooth.bluetuith.enable = true;
+    system.bottom.enable = true;
+  };
+
   # Base Utilities
   nkm.programs.commonUtils.enable = true;
 

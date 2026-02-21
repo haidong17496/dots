@@ -8,5 +8,6 @@
     ./fonts.nix
     ./greeters.nix
     ./wm/niri.nix
+    ./hardware/nvidia.nix
   ];
 }

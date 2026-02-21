@@ -53,7 +53,7 @@ in {
 
       Service = {
         # Using manual mode (-T) based on config
-        ExecStart = "${pkgs.wlsunset}/bin/wlsunset -T ${toString cfg.temperature}";
+        ExecStart = "${pkgs.wlsunset}/bin/wlsunset -t ${toString cfg.temperature} -T ${toString cfg.temperature}";
         Restart = "on-failure";
       };
 

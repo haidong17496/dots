@@ -1,8 +1,5 @@
 {...}: {
   imports = [
-    # Hardware
-    ./hardware/nvidia.nix
-
     # Terminal
     ./terminal/alacritty.nix
     ./shell/zsh.nix
@@ -28,6 +25,9 @@
 
     # Others
     ./programs/media.nix
-    ./programs/gui-apps.nix
+    ./programs/gui.nix
+    ./programs/tui.nix
+    ./tools/nirishot.nix
+    ./tools/sreen-record.nix
   ];
 }

@@ -7,9 +7,6 @@
   cfg = config.nkm.system.displayManager;
 in {
   options.nkm.system.displayManager = {
-    # Option for Ly
-    ly.enable = lib.mkEnableOption "Ly Display Manager (Lightweight TUI)";
-
     # Option for Tuigreet
     tuigreet = {
       enable = lib.mkEnableOption "Tuigreet Display Manager";
@@ -25,11 +22,6 @@ in {
 
   # Using mkMerge allows us to apply configurations conditionally based on which toggle is ON
   config = lib.mkMerge [
-    # --- Ly Configuration ---
-    (lib.mkIf cfg.ly.enable {
-      services.displayManager.ly.enable = true;
-    })
-
     # --- Tuigreet Configuration ---
     (lib.mkIf cfg.tuigreet.enable {
       services.greetd = {

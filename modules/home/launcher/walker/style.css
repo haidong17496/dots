@@ -49,7 +49,6 @@
 .input:active {
   border-color: @accent_color;
   background: darker(@input_bg);
-  /* Bóng phát sáng mờ dùng hàm alpha */
   box-shadow: 0 0 20px alpha(@accent_color, 0.2);
 }
 
@@ -78,7 +77,6 @@ child:selected .item-box {
 }
 
 child:hover .item-box {
-  /* Hover sáng mờ 5% dựa trên màu text */
   background: alpha(@text_color, 0.05);
 }
 
@@ -136,7 +134,7 @@ child:selected .item-subtext {
   background: alpha(@accent_color, 0.1);
   color: @accent_color;
 
-  font-family: monospace; /* Giữ monospace cho khung phím tắt */
+  font-family: monospace;
   font-weight: bold;
   font-size: 11px;
 }

@@ -14,8 +14,10 @@ in {
     # 1. Packages
     home.packages = with pkgs; [
       papirus-icon-theme
-      bibata-cursors
       adwaita-icon-theme
+      adwaita-qt
+      adwaita-qt6
+      bibata-cursors
       gnome-themes-extra
     ];
 
@@ -34,7 +36,13 @@ in {
       gtk4.extraConfig.gtk-application-prefer-dark-theme = 1;
     };
 
-    # 3. Cursor (Trỏ chuột)
+    qt = {
+      enable = true;
+      platformTheme.name = "gtk";
+      style.name = "adwaita-dark";
+    };
+
+    # 3. Cursor
     home.pointerCursor = {
       name = "Bibata-Modern-Ice";
       package = pkgs.bibata-cursors;

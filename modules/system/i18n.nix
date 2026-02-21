@@ -8,7 +8,6 @@
 }: let
   cfg = config.nkm.system.i18n;
 in {
-  # Import module từ flake
   imports = [
     inputs.fcitx5-lotus.nixosModules.fcitx5-lotus
   ];

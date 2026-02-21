@@ -28,7 +28,7 @@
       # --- Status Line ---
       lualine = {
         enable = true;
-        settings.options.theme = "catppuccin";
+        settings.options.theme = "dracula";
       };
 
       # --- Icons ---

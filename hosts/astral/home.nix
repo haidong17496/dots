@@ -16,6 +16,8 @@
   # MODULES CONFIGURATION
   # =======================================================
 
+  nkm.theme.enable = true;
+
   # --- Terminal & Shell ---
   nkm.terminal.alacritty.enable = true;
   nkm.shell.zsh.enable = true;
@@ -37,6 +39,7 @@
     lockCmd = "pidof hyprlock || hyprlock";
   };
   nkm.programs.hyprlock.enable = true;
+  nkm.services.hyprpaper.enable = true;
 
   # Browser
   nkm.browser.firefox.enable = true;

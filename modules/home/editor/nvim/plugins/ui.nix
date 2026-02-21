@@ -1,6 +1,5 @@
 {...}: {
   programs.nixvim = {
-    # --- Colorscheme ---
     colorschemes.catppuccin = {
       enable = true;
       settings = {

@@ -15,7 +15,6 @@
   # =======================================================
   # SYSTEM MODULES CONFIGURATION
   # =======================================================
-
   # Base System
   nkm.system.core.enable = true;
   nkm.system.network.enableNetworkManager = true;
@@ -38,7 +37,7 @@
   nkm.system.wm.niri.enable = true;
 
   # Display Manager
-  nkm.system.displayManager.ly.enable = true;
+  nkm.system.displayManager.tuigreet.enable = true;
 
   # =======================================================
 

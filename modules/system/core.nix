@@ -31,7 +31,7 @@ in {
       clean.extraArgs = "--keep-since 7d --keep 3";
     };
 
-    environment.variables.FLAKE = "/home/${user}/dots";
+    environment.variables.NH_FLAKE = "/home/${user}/dots";
 
     environment.systemPackages = with pkgs; [
       git

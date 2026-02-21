@@ -31,10 +31,10 @@ window#waybar {
     box-shadow: none;
 }
 
-/* --- WORKSPACES (Thanh điều hướng) --- */
+/* --- WORKSPACES --- */
 #workspaces button {
     padding: 0 8px;
-    color: #a6adc8;
+    color: @a6adc8;
     background-color: transparent;
     border-bottom: 3px solid transparent;
     transition: all 0.2s ease;
@@ -46,34 +46,34 @@ window#waybar {
 }
 
 #workspaces button:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(205, 214, 244, 0.1);
 }
 
 /* --- WINDOW TITLE --- */
 #window {
     font-weight: normal;
-    color: #bac2de;
+    color: @bac2de;
 }
 
-/* --- TRAY (Các icon hệ thống) --- */
+/* --- TRAY --- */
 #tray {
     padding: 0 10px;
 }
 
 #pulseaudio { color: #89b4fa; }
-#network { color: #a6e3a1; }
-#battery { color: #fab387; }
-#clock { color: #cba6f7; }
+#network    { color: #a6e3a1; }
+#battery    { color: #fab387; }
+#clock      { color: #cba6f7; }
 
 #battery.critical {
     background-color: #f38ba8;
     color: #1e1e2e;
 }
 
+/* --- NOTIFICATIONS --- */
 #custom-notification {
-    font-family: "JetBrainsMono Nerd Font";
     font-size: 16px;
-    color: #cba6f7;
+    color: @cba6f7;
     padding: 0 10px;
     margin: 0 5px;
 }
@@ -86,5 +86,5 @@ window#waybar {
 
 #custom-notification.dnd-none,
 #custom-notification.dnd-notification {
-    color: #f38ba8;
+    color: @f38ba8;
 }

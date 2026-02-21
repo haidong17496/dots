@@ -27,7 +27,7 @@ in {
 
         # --- EXTENSIONS ---
         # Using the flake input 'firefox-addons' to get latest versions
-        extensions = with inputs.firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [
+        extensions.packages = with inputs.firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [
           ublock-origin
           vimium
           translate-web-pages

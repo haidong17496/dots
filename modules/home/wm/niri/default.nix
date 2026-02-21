@@ -16,7 +16,6 @@ in {
       libnotify
       grim
       slurp
-      swaybg
     ];
 
     # Map the configuration files to ~/.config/niri/

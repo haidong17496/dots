@@ -42,7 +42,7 @@ in {
       '';
 
       # Accept autosuggestion with Ctrl+E
-      initExtra = ''
+      initContent = ''
         bindkey '^e' autosuggest-accept
       '';
 

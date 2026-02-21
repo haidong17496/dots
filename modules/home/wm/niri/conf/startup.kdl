@@ -6,10 +6,6 @@ hotkey-overlay {
     skip-at-startup
 }
 
-spawn-at-startup "bash" "-c" "systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP NIRI_SOCKET && systemctl --user start graphical-session.target"
-
-spawn-at-startup "waybar"
-spawn-at-startup "swaybg" "-i" "${../../../../images/wallpaper.png}" "-m" "fill"
 spawn-at-startup "swaync"
 spawn-at-startup "fcitx5" "-d" "--replace"
 

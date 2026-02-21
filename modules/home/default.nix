@@ -8,6 +8,9 @@
     # Window Manager
     ./wm/niri
 
+    # UI & Theme
+    ./theme
+
     # App Launcher
     ./launcher/walker
 
@@ -16,6 +19,7 @@
     ./services/swaync
     ./services/hypridle.nix
     ./services/hyprlock.nix
+    ./services/hyprpaper.nix
 
     # Browser
     ./browser/firefox
@@ -24,6 +28,7 @@
     ./editor/nvim
 
     # Others
+    ./programs/common.nix
     ./programs/media.nix
     ./programs/gui.nix
     ./programs/tui.nix
